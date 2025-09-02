@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Project Portfolio</title>
+  <style>
+    /* ===== CSS START ===== */
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #00ffcc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .neon-text {
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc, 
+              0 0 10px #00ffcc, 
+              0 0 20px #00ffcc, 
+              0 0 40px #00e6b8;
+}
+
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px #00ffcc88;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .neon-button {
+  background: transparent;
+  border: 2px solid #00ffcc;
+  padding: 12px 25px;
+  color: #00ffcc;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #00ffcc;
+  box-shadow: 0 0 10px #00ffcc66, 0 0 20px #00ffcc33 inset;
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  background-color: #00ffcc22;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffcc;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc66 inset;
+}
+
+
+    nav a {
+      margin: 0 15px;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 8px #00ffcc;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00ffcc;
+      padding-left: 10px;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px #00ffcc33;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #00ffcc88;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+    }
+
+    .project a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .project a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 6px #00ffcc;
+    }
+
+    #contact a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #00ffcc;
+    }
+
+
+    @keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 5px #00ffcc;
+  }
+  50% {
+    text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ffcc;
+  }
+}
+
+.neon-pulse {
+  animation: neonPulse 1.5s infinite;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* ===== CSS END ===== */
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="neon-text neon-pulse">🚀 My Project Portfolio :- Dharmendra Singh</h1>
+
+    <br>
+    <br>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>👨‍💻 About Me</h2>
+
+    <p>I’m a Computer Science Engineering student with a strong passion for Web Development, Software Engineering, and emerging technologies 
+      like Artificial Intelligence(AI) and Machine Learning (ML). I enjoy building interactive web applications, 
+      solving real-world problems through code (solving complex problems), and continuously exploring new  technologies (tools) and frameworks to grow as a my skills.</p>
+  </section>
+
+  <section id="projects">
+    <h2>📁 My Projects</h2>
+    <br>
+    <br>
+    <div class="project-list">
+      <div class="project neon-box">
+        <h3>👨‍🏫Student 📝 Result System</h3>
+        <p>📝 Student Result System The Student Result System is a simple web-based 
+        tool that allows users to enter student names 
+        and marks for three subjects, then automatically calculates the total marks, percentage, and grade.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Student_Result_System.git" target="_blank">🗃️📌 Source Code</a>
+        <br>
+        <a href="https://student-result-system-gold.vercel.app/" target="_blank">🔗 View Project </a>
+      </div>
+
+      <div class="project">
+        <h3> 🧾Share_Knowledge-Elevate_Learning</h3>
+        <p>✅Passionate about sharing knowledge to elevate learning experiences for everyone. I believe that education becomes powerful when it's accessible, practical, and shared. 
+          Always exploring better ways to learn, teach, and grow together.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Share_Knowledge-Elevate_Learning.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://share-knowledge-elevate-learning.vercel.app/" target="_blank">🔗 View Project</a>
+        </div>
+
+
+      <div class="project">
+        <h3>Happy💫 Independence 🎊Day</h3>
+        <p>
+          ✊Freedom is my birthright, and I shall live it with pride.
+Indian Forever 🇮🇳 | Jai Bharat | 15 August
+
+<br>
+<br>
+          
+          🕊️ Saluting the heroes who gave us freedom.
+Honoring the spirit of independent India.
+Happy Independence Day 
+
+<br>
+<br>
+15 August
+🔥 Freedom in Mind
+💓 Pride in Heart
+🕊️ Spirit of India
+#IndependenceDay #JaiHind
+
+
+
+</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Happy-Independence-Day.git" target="_blank"> 🗃️📌 Source Code </a>
+        <br>
+      </div>
+      <div class="project">
+        <h3>🌡️Temperature🌈 Converter☄️</h3>
+        <p>🌡️ Temperature Converter A simple and interactive temperature converter built using HTML, CSS, and JavaScript.
+        This tool allows users to convert temperature values between Celsius, Fahrenheit, and Kelvin in real-time with a clean user interface.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Temperature-Converter.git" target="_blank"> 🗃️📌 Source Code </a>
+        <br>
+        <a href="https://temperature-converter-flax-one.vercel.app/" target="_blank">🔗 View Project </a>
+      </div>
+      <div class="project">
+        <h3> 🧱 Web Page Structeres </h3>
+        <p>🧱 Web Page Structure This project demonstrates the basic structure of a modern web page using HTML and CSS. 
+        It serves as a foundation for building responsive, accessible, and well-organized websites.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Web-Page-Structeres.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://web-page-structeres.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+      <div class="project">
+        <h3> ☀️India State Weather </h3>
+        <p>☀️ India State Weather – Real-time Weather Updates for Every State
+India State Weather is your one-stop solution to get accurate and 
+up-to-date weather information for all Indian states and union territories. 
+Whether you're planning a trip, 
+checking for rainfall, 
+or just curious about the temperature in another state, this app provides detailed weather insights with ease.</p>
+<br>
+<br>
+        <a href="https://github.com/dharmendra-star/India_state_weather.git" target="_blank">🗃️📌 Source Code</a>
+      </div>
+      <div class="project">
+        <h3> 🎉Birthday 💑Wishes Web App</h3>
+        <p>💓The Birthday Wishes web app is a 🎁creative and personalized project that delivers heartfelt birthday greetings 
+          through an interactive webpage. 🎈Designed with animations, emojis, and 💫stylish fonts, it provides a unique way to surprise 
+          someone special with warm wishes,🌸</p>
+<br>
+<br>
+        <a href="https://github.com/dharmendra-star/H_Bday-V5.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://h-bday-v5.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project">
+        <h3> Raksha💫 Bandhan web App</h3>
+        <p>💓"A bond of love, a thread of protection ❤️🪢 Happy Raksha Bandhan to the one who🎈 makes my life brighter 🎁every day."🌸</p>
+        <br>
+        <p>🌸
+🎁Rakhi ka tyohar aaya hai,
+Behna ki khushi ka💓 paighaam laya hai,
+Bhai ki hifazat ka wada laya hai,
+Ye bandhan pyaar ka ❤️🪢sabse khoobsurat saaya hai.
+🌸</p>
+        
+<br>
+<br>
+        <a href="https://github.com/dharmendra-star/Raksha_Bandhan.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://raksha-bandhan-flax-seven.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>👩‍🍳Mama's 🍲Kitchen </h3>
+        <p>🍽️ Mama's Kitchen is a beautifully designed web project that showcases delicious recipes, 
+        menu items, or a restaurant’s 🥞offerings. Built with HTML, CSS, and optionally JavaScript, 
+        this site delivers a warm and inviting digital🥟 space—just like home-cooked 🍵food.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Mama-s-Kitchen.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+      </div>
+      <div class="project">
+        <h3>🍽️Recipe🧀 Finder</h3>
+        <p>🍲 Recipe Finder – Your Personal 🍜Cooking Assistant
+Recipe🍨 Finder is your smart kitchen💥 companion that helps you discover 🫔delicious recipes based on the 🥪ingredients you have. 
+Whether you're a beginner 🥨or a seasoned chef, this app makes cooking🍛 easy and fun. Just enter what you have in your kitchen🍝,
+ and get instant recipe 🍔suggestions with step-by-step instructions.🥩🍢</p>
+ <br>
+ <br>
+        <a href="https://github.com/dharmendra-star/Recipe_Finder.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://recipe-finder-three-sigma.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+      <div class="project">
+        <h3>✈️ Travel Booking App</h3>
+        <p> ✈️TravelEase is a smart travel booking platform that allows users to easily search, compare, and book flights, hotels, 
+          and holiday packages in one place. It provides a user-friendly interface, real-time pricing, and secure payment options 
+          to ensure a hassle-free travel experience.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/-Travel-Booking-App.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://travel-booking-app-alpha.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+      <div class="project">
+        <h3>❤️ Crush Finder App </h3>
+        <p>Crush Finder is a fun and interactive web app that allows users to send and receive anonymous crush messages. 
+          The app matches mutual feelings by tracking responses secretly, revealing the crush only when both users like each other. 
+          It's designed with privacy and simplicity, making it engaging and viral among friends and classmates.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Crush_Finder.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://crush-finder-azure.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+      <div class="project">
+        <h3>🛒 Amazon Clone </h3>
+        <p>ShopEasy is a full-featured e-commerce web application inspired by Amazon. 
+          It includes everything from product listings and shopping cart to secure user login and checkout system. 
+          Built to simulate a real online shopping experience, this clone showcases robust frontend UI, backend logic, and database integration.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Amazon_Clone.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://amazon-clone-tau-lemon-59.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project">
+        <h3>🧮 Simple Calculator</h3>
+        <p>QuickCalc is a basic calculator web app designed to perform simple arithmetic operations like 
+          addition, subtraction, multiplication, and division. It features a clean user interface and handles 
+          real-time user input with dynamic display updates./p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Simple_Calculater.git" target="_blank">🗃️📌 Source Code </a>
+        
+        <br>
+        <a href="https://simple-calculater-six.vercel.app/" target="_blank">🔗 View Project</a>
+
+        </div>
+
+        <div class="project">
+        <h3> 📚Online 🔍 Quiz </h3>
+        <p> 🧾The Online Quiz App is an interactive web application designed to test users' 
+          knowledge on various programming languages like Python, Java, C, and more. It features multiple-choice questions, 
+          instant feedback, scoring, and a clean, responsive user interface. This project demonstrates real-time input handling,
+        DOM manipulation, and modular JavaScript logic.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Online_Quiz.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://online-quiz-sable-five.vercel.app/" target="_blank">🔗 View Project</a>
+      </div>
+
+ 
+      <div class="project">
+        <h3> 🧮Python Calculater </h3>
+        <p>🧮The Python Calculator is a command-line based tool built using core Python. 
+          It performs basic arithmetic operations such as addition, subtraction, multiplication, and division. 
+          The program takes user input, processes it with conditional logic, and displays the result in real-time.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/Python_Calculater.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+      </div>
+
+      <div class="project">
+        <h3> 🧾To-Do App</h3>
+        <p>✅The To-Do App is a minimalist and functional task manager that helps users keep track of daily activities and goals. 
+          Users can add, mark as complete, and delete tasks in real-time. Built using plain JavaScript, it stores tasks in the browser’s 
+          local storage, ensuring persistence even after refreshing the page.</p>
+        <br>
+        <br>
+        <a href="https://github.com/dharmendra-star/To-Do-Web_App.git" target="_blank">🗃️📌 Source Code </a>
+        <br>
+        <a href="https://to-do-web-app-psi-ten.vercel.app/" target="_blank">🔗 View Project</a>
+        </div>
+
+        <div class="project">
+        <h3> 🔬Machine Learning♻️ Model</h3>
+        <p> 🤖A machine learning model designed 🧭to analyze patterns, make data-driven predictions, and continuously improve through training. Built with scalable algorithms and optimized for performance across diverse datasets, I contribute to 
+          intelligent automation and decision-making in 💡real-world applications.</p>
+        <br>
+        <br>
+        <a href="##" target="_blank"> 💫Coming 🔜Soon </a>
+        
+        </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <br>
+    <p>📞Phone: <a>9142153863</a></p>
+    <br>
+    <p>📥Email: <a href="mailto:yourname@example.com">sd8750061@gmail.com</a></p>
+    <br>
+    <p>📇GitHub : <a href="https://github.com/dharmendra-star" target="_blank">profile</a></p>
+    <br>
+    <p>🧑‍💻Linkedin : <a href="https://www.linkedin.com/in/dharmendra-singh-198032374" target="_blank">profile</a></p>
+    <br>
+    <p>📱Instagram: <a href="https://www.instagram.com/dharmendra_developer/" target="_blank">profile</a></p>
+    <br>
+    <p>📲Facebook: <a href="https://www.facebook.com/dharmendra.kumar.singh.125790" target="_blank">profile</a></p>
+    <br>
+    <br>
+
+  </section>
+
+
+  <footer>
+    <p>&copy; DHARMENDRA KUMAR SINGH :- I’m a Computer Science Engineering student with a strong passion for Web Development, Software Engineering, and emerging technologies 
+      like Artificial Intelligence(AI) and Machine Learning (ML).</p>
+  </footer>
+</body>
+</html>
